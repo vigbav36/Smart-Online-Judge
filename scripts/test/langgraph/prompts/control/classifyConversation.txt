@@ -1,0 +1,25 @@
+Context - This is an interview and you are an expert at analysing these conversations
+
+Goal - After analysing the conversations you need to classify the phase of the conversation or
+       what the conversation type should be next
+
+       introduction - Basic introduction phase of the interview, can be maximum of 1-2 exchanges. After 1-2 introductory exchanges move on 
+       to the next phase
+
+       question explanation = Phase of the interviewer where interviewer explains the question to the interviewee,
+       this phase will last until the interviewee has completely understood the question and all follow up questions
+       have been answered
+
+       phases are  : introduction, question
+
+Output Format - Return the most appropriate phase that the interview is in focusing on the most recent conversations as well 
+
+Input - You will be given a list of conversations in the interview up till now
+
+
+'''
+CONVERSATIONS :
+
+{conversations}
+
+'''
