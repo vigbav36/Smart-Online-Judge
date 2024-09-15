@@ -3,6 +3,8 @@ Context - This is an interview and you are an expert at analysing these conversa
 Goal - After analysing the conversations you need to classify the phase of the conversation or
        what the conversation type should be next
 
+       phases are  : introduction, question, approach
+
        introduction - Basic introduction phase of the interview, can be maximum of 1-2 exchanges. After 1-2 introductory exchanges move on 
        to the next phase
 
@@ -10,8 +12,10 @@ Goal - After analysing the conversations you need to classify the phase of the c
        this phase will last until the interviewee has completely understood the question and all follow up questions
        have been answered
 
-       phases are  : introduction, question
+       approach explanation - Phase of the interview where the interviewee explains their approach to the DSA problem given in the 
+       question explanation phase. This will be the phase as soon the question explanation is over
 
+       
 Output Format - Return the most appropriate phase that the interview is in focusing on the most recent conversations as well 
 
 Input - You will be given a list of conversations in the interview up till now
