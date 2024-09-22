@@ -1,0 +1,10 @@
+/* Style the tabs header */
+.ant-tabs-tab-btn {
+    color: white !important; /* Make the tab text white */
+    font-size: 1rem;
+}
+
+/* Optional: Customize the active tab style */
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #40a9ff !important; /* Active tab color (you can adjust this as needed) */
+}

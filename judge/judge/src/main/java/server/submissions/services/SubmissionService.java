@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import server.submissions.dao.SubmissionDAO;
+import server.submissions.models.Status;
 import server.submissions.models.Submission;
 import server.submissions.models.SubmissionMessage;
 import server.submissions.models.SubmissionResult;
@@ -60,5 +61,9 @@ public class SubmissionService {
 
     public Submission getSubmission(Long submissionId){
         return submissionDAO.getSubmission(submissionId);
+    }
+
+    public void updateSubmissionStatus(Long submissionId, Status status){
+        submissionDAO.updateSubmissionStatus(submissionId, status);
     }
 }

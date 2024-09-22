@@ -28,6 +28,14 @@ public class SubmissionDAO {
         return getSubmission(submissionRecord.getValue(SUBMISSION.SUBMISSION_ID));
     }
 
+
+    public void updateSubmissionStatus(Long submissionId, Status status){
+        dslContext.update(SUBMISSION)
+                .set(SUBMISSION.STATUS, status.name())
+                .where(SUBMISSION.SUBMISSION_ID.eq(submissionId))
+                .execute();
+    }
+
     public Submission getSubmission(Long submissionId){
         return dslContext.select(SUBMISSION.SUBMISSION_ID, SUBMISSION.QUESTION_ID, SUBMISSION.LANGUAGE, SUBMISSION.SUBMITTED_CODE, SUBMISSION.STATUS, SUBMISSION.SUBMISSION_TIME)
                 .from(SUBMISSION)

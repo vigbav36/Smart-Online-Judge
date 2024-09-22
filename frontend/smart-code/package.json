@@ -8,11 +8,16 @@
     "@testing-library/user-event": "^13.5.0",
     "@uiw/codemirror-extensions-basic-setup": "^4.23.2",
     "@uiw/codemirror-extensions-line-numbers-relative": "^4.23.2",
+    "@uiw/codemirror-theme-aura": "^4.23.2",
+    "@uiw/codemirror-theme-nord": "^4.23.2",
     "@uiw/codemirror-themes-all": "^4.23.2",
     "@uiw/react-codemirror": "^4.23.2",
+    "antd": "^5.20.6",
+    "postcss-cli": "^11.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "react-speech-recognition": "^3.10.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,5 +43,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.12"
   }
 }

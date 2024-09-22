@@ -1,0 +1,6 @@
+.test-case{
+    padding: 20px; /* Add some padding */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
+    height: 100%;
+  }

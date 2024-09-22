@@ -1,11 +1,11 @@
 import React, { useState, useCallback } from 'react';
 import CodeMirror from '@uiw/react-codemirror';
-import { python } from '@codemirror/lang-python';
+import {nord} from '@uiw/codemirror-theme-nord';
 
-function TextEditor() {
-  const [code, setCode] = useState("print('hello world!')");
 
-  const onChange = useCallback((code, viewUpdate) => {
+function TextEditor({code, setCode}) {
+  const handleChange = useCallback((code, viewUpdate) => {
+    console.log(code)
     setCode(code);
   }, []);
 
@@ -13,7 +13,8 @@ function TextEditor() {
     <CodeMirror
       value={code}     
       height="75vh"
-      onChange={onChange}
+      theme={nord}
+      onChange={handleChange}
     />
   );
 }

@@ -1,0 +1,41 @@
+.question-description {
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    height: 100%;
+}
+
+.question-description h3 {
+    font-size: 1.8rem; /* Larger font size for the title */
+    color: #d4d7db; /* Color for better readability */
+    margin-bottom: 30px; /* Space below the title */
+}
+
+.question-description p {
+    font-size: 1rem; /* Default paragraph font size */
+    color: #f7f7f7; /* Darker shade for the paragraph for contrast */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+.question-description pre {
+    background-color: #2b3c4b; /* Light background for the code block */
+    border-radius: 4px; /* Rounded corners for the code block */
+    padding: 10px; /* Padding inside the code block */
+    overflow-x: auto; /* Allow horizontal scrolling for long lines */
+    color: #ffffff; /* Dark text color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+    white-space: pre-wrap; /* Allow text to wrap within the block */
+}
+
+.question-description::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.question-description::-webkit-scrollbar-thumb {
+    background-color: black; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.question-description::-webkit-scrollbar-track {
+    background: transparent; /* Background for the track */
+}

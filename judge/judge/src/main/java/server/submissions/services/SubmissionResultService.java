@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import server.submissions.dao.SubmissionDAO;
 import server.submissions.dao.SubmissionResultsDAO;
+import server.submissions.models.Status;
 import server.submissions.models.SubmissionResult;
 
 import java.util.List;
@@ -25,5 +26,6 @@ public class SubmissionResultService {
         for(SubmissionResult result : results)
             result.setSubmissionId(submissionId);
         submissionResultsDAO.addOrUpdateSubmissionResults(results);
+        submissionDAO.updateSubmissionStatus(submissionId, Status.COMPLETED);
     }
 }
